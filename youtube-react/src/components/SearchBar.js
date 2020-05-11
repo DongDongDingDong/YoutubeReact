@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import { Paper, TextField } from '@material-ui/core';
 
+import styled from 'styled-components';
+
+
 class SearchBar extends Component {
     state={
         searchTerm: '',
@@ -20,7 +23,7 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <Paper elevation={6} style={{padding:'25px'}}>
+            <Paper elevation={6} style={{padding:'2rem', width:'200rem', background:'#d4d4cf'}}>
                 <form onSubmit={this.handleSubmit}>
                     <TextField fullWidth label="Search..." onChange={this.handleChange}></TextField>
                 </form>
@@ -29,4 +32,8 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar
+export default SearchBar;
+
+// const x = styled.div`
+
+// `;
